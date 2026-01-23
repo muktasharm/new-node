@@ -9,15 +9,37 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello World' });
 });
 
+// Define route 
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello World' });
+});
+   // define route 
+  app.get('/greet', (req, res) => {
+  const name = req.query.name || "Guest";
+
+  res.json({
+    message: `Hello ${name}, welcome to Express API`
+  });
+});
+
 // Define route
 app.get('/', (req, res) => {
   res.json({ message: 'Hello World' });
 });
 
-
 // Define route
 app.get('/get', (req, res) => {
   res.json({ message: 'Hello World gwt' });
+});
+
+// define route 
+app.get('/user', (req, res) => {
+  res.status(200).json({
+    id: 1,
+    name: "Mukta Sharma",
+    role: "DevOps Engineer",
+    experience: "2+ years"
+  });
 });
 
 
