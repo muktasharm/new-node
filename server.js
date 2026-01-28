@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 // Define route 
-app.get('/', (req, res) => {
+app.get('/we', (req, res) => {
   res.json({ message: 'Hello World' });
 });
    // define route 
