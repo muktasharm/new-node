@@ -2,7 +2,7 @@
 // index.js
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 4000;
 
 // Define route
 app.get('/', (req, res) => {
